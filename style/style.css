@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+* {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+:root {
+  --light: #f2e9e4;
+  --main: #22223b;
+  --main-lighter: #4a4e69;
+  --hellotrope-gray: #9a8c98;
+  --silver-pink: #c9ada777;
+}
+
+body {
+  background-color: var(--background);
+}
+
+p {
+  font-size: 15px;
+}
+
+nav {
+  background-color: var(--main);
+  color: var(--light);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav .logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--light);
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li .cta-btn {
+  background-color: var(--main-lighter);
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .add-abstract {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: var(--main-lighter);
+  color: var(--hellotrope-gray);
+  min-height: calc(100vh - 120px);
+  padding: 1rem;
+}
+
+main .add-abstract label {
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+main .cards {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 1rem;
+}
+
+main .cards .card {
+  background-color: var(--silver-pink);
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  margin: 1rem 0rem;
+}
+/*# sourceMappingURL=style.css.map */
