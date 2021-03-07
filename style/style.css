@@ -97,19 +97,35 @@ main .add-summary {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--main-lighter);
-  color: var(--hellotrope-gray);
-  padding: 1rem;
+  color: var(--light);
+  padding: 2rem;
+  margin: 1rem;
 }
 
 main .add-summary label {
   margin: 0.5rem 0 0.25rem 0;
 }
 
+main .add-summary input,
+main .add-summary textarea {
+  border-radius: 0.2rem;
+  background-color: var(--light);
+  color: var(--main);
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+}
+
+main .add-summary button {
+  margin-top: 1rem;
+}
+
 main .cards {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-  padding: 1rem;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 main .cards .card {
