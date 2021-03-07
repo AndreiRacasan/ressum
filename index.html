@@ -19,37 +19,38 @@
   </nav>
 
   <main>
-    <div class="cards">
-      <div class="info">
-        <h2>What is Ressum?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consequatur itaque, voluptate enim tenetur porro illo. Id pariatur at quos quibusdam eligendi inventore quia voluptas, quaerat tempore accusantium soluta libero minus amet. Nesciunt iste atque perferendis maiores consequatur distinctio dolor magnam quam nulla id ullam ipsum explicabo, facilis facere dignissimos!</p>
+    <div class="container">
+      <form class="add-summary">
+        <h2>Add Summary</h2>
+        <label for="title">
+          Full Title
+        </label>
+        <input type="text" name="title" id="title">
+        <label for="researcher">
+          Researcher
+        </label>
+        <input type="text" name="researcher" id="researcher">
+        <label for="summary">
+          Summary
+        </label>
+        <textarea id="summary" name="summary" rows="5" cols="5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, quod? Maiores eveniet, cumque eaque et iste quia nesciunt? Cupiditate ducimus inventore voluptates possimus numquam, excepturi vel?</textarea>
+  
+        <button type="button" class="add-button">Add to Recent Summaries</button>
+      </form>
+      <div class="cards">
+        <div class="info">
+          <h2>What is Ressum?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consequatur itaque, voluptate enim tenetur porro illo. Id pariatur at quos quibusdam eligendi inventore quia voluptas, quaerat tempore accusantium soluta libero minus amet. Nesciunt iste atque perferendis maiores consequatur distinctio dolor magnam quam nulla id ullam ipsum explicabo, facilis facere dignissimos!</p>
+        </div>
+        <h2>Recent Summaries</h2>
+        <div class="card">
+          <h3>Title</h3>
+          <h3>Researcher</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum tempora, ratione cupiditate, temporibus ea quisquam minima possimus aliquid eius, assumenda expedita pariatur itaque eveniet.</p>
+        </div>
       </div>
-      <h2>Recent Summaries</h2>
-      <div class="card">
-        <h3>Title by Researcher</h3>
-        <h6>Full URL</h6>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illum tempora, ratione cupiditate, temporibus ea quisquam minima possimus aliquid eius, assumenda expedita pariatur itaque eveniet.</p>
-      </div>
-    </div>
-    <form class="add-abstract">
-      <h2>Add Summary</h2>
-      <label for="title">
-        Full Title
-      </label>
-      <input type="text" name="title" id="title">
-      <label for="author">
-        Researcher(s)
-      </label>
-      <input type="text" name="author" id="author">
-      <label for="total pages">
-        Summary (max 500 characters)
-      </label>
-      <input type="text" name="total pages" id="total pages">
-
-      <button type="button" class="add-button">Add to Recent Summaries</button>
-    </form>
     </div>
   </main>
-  
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
