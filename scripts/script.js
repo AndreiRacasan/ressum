@@ -1,12 +1,13 @@
-function Summary() {
+class Summary {
   constructor(
     title = "Unknown",
     researcher = "Unknown",
     summary = "Unknown",
-  ) 
+  ) {
     this.title = title;
     this.researcher = researcher;
     this.summary = summary;  
+  }
 }
 
 let myList = [];
@@ -35,7 +36,7 @@ function addSummary(e) {
   if (addToList(getListFromInput())) {
     updateListGrid();
   } else {
-    alert('Error!');
+    alert('Error! Item already exists.');
   }
 }
 
@@ -56,8 +57,22 @@ function updateListGrid() {
   }
 }
 
-function createListCard(summary) {
-  
+function createListCard(sum) {
+  const listCard = document.createElement("div");
+  const title = document.createElement("h3");
+  const researcher = document.createElement("h3");
+  const summary = document.createElement("p");
+
+  listCard.classList.add('card');
+
+  title.textContent = sum.title;
+  researcher.textContent = sum.researcher;
+  summary.textContent = sum.summary;
+
+  listCard.appendChild(title);
+  listCard.appendChild(researcher);
+  listCard.appendChild(summary);
+  listGrid.appendChild(listCard);
 }
 
 function resetGrid() {
