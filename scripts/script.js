@@ -21,12 +21,6 @@ function addToList(newSummary) {
   return true;
 }
 
-function removeFromList(summaryTitle) {
-  myList = myList.filter(i => i.title !== summaryTitle)
-  saveLocal();
-}
-
-
 const form = document.querySelector(".add-summary");
 form.addEventListener("submit", addSummary);
 
@@ -80,7 +74,14 @@ function resetGrid() {
 }
 
 
-
 function saveLocal() {
   localStorage.setItem("myList", JSON.stringify(myList));
 }
+
+function restoreLocal() {
+  myList = JSON.parse(localStorage.getItem("myList"));
+  if (myList === null) myList = [];
+  updateListGrid();
+}
+
+restoreLocal();
