@@ -84,4 +84,13 @@ function restoreLocal() {
   updateListGrid();
 }
 
+const clearLocal = document.querySelector("#clearLocalStorage");
+
+function clearLocalStorage() {
+  localStorage.clear();
+  listGrid.innerHTML = "";
+}
+
+clearLocal.addEventListener('click', clearLocalStorage);
+
 restoreLocal();
