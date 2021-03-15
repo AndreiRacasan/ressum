@@ -88,7 +88,8 @@ const clearLocal = document.querySelector("#clearLocalStorage");
 
 function clearLocalStorage() {
   localStorage.clear();
-  listGrid.innerHTML = "";
+  myList = [];
+  updateListGrid();
 }
 
 clearLocal.addEventListener('click', clearLocalStorage);
